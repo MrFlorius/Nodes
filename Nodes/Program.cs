@@ -1,12 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
+using Nodes.Catalog;
 
 namespace Nodes
 {
-    class Program
+    static class Program
     {
+        static void SimpleNodes()
+        {
+            InputNode inputNode = new InputNode();
+            OutputNode outputNode = new OutputNode();
+
+            inputNode.Link(outputNode);
+            inputNode.Call();
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // SimpleNodes();
+            PerformanceBenchmark.Benchmark.Test();
         }
     }
 }
