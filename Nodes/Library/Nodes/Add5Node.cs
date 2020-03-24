@@ -1,4 +1,4 @@
-namespace Nodes.Catalog
+namespace Nodes.Library.Nodes
 {
     public class Add5Node: Node
     {

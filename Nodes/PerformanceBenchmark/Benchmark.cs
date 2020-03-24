@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
-using Nodes.Catalog;
+using Nodes.Library.Nodes;
 
 namespace Nodes.PerformanceBenchmark
 {
@@ -11,7 +11,6 @@ namespace Nodes.PerformanceBenchmark
         
         public static void Test()
         {
-
             Stopwatch nodes = Stopwatch.StartNew();
             {
                 Add5Node add5Node = new Add5Node();

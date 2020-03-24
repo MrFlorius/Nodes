@@ -1,6 +1,6 @@
 using System;
 
-namespace Nodes.Catalog
+namespace Nodes.Library.Nodes
 {
     public class InputNode: Node
     {
